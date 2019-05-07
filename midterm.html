@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Midterm</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+	<script src="js/midterm.js"></script>
+
+</head>
+<body>
+	<div class="text">
+		<h2>Welcome!</h2>
+        <img src="images/welcom.gif">
+	</div>
+	<script type="text/javascript">
+
+		// opening first popup window mywin which contains four links. 
+
+		myWin=window.open("","","width=400,height=300,top=400,resizable,dependent=yes");
+		myWin.focus();
+		myWin.document.write("<body style='background:yellow'>");
+        myWin.document.write("<script type=\"text/javascript\" src=\"js/mywin.js\"><\/script>");
+		myWin.document.write("<h2>Cruise.....Hot deals</h2>");
+		document.write("<p>")
+		myWin.document.write("<a href='javascript:opener.displayList(opener.arrayOfCruies);'>Display Cruises</a><br><br>");
+		myWin.document.write("<a href='javascript:loadURl(\"https://www.royalcaribbean.com/\");'>Royal Caribbean</a><br><br>");
+		myWin.document.write("<a href='javascript:loadURl(\"https://www.carnival.com/\");'>Carnival</a><br><br>");
+		myWin.document.write("<a href='javascript:loadURl(\"https://disneycruise.disney.go.com/\");'>Disney Cruises</a><br><br>");
+		document.write("</p>");
+		myWin.document.write("</body>");
+
+
+		// Display Cruises
+       
+
+
+
+	</script>
+
+</body>
+</html>
